@@ -1,0 +1,12 @@
+*.bak
+*.log
+*.gz
+*.ps
+*.synctex(busy)
+*.synctex.gz
+*.aux
+*.out
+*.bbl
+*.blg
+changelog-thesis
+copyright-thesis

@@ -1,0 +1,51 @@
+\documentclass[10pt,a4paper,twocolumn,DIV18]{scrartcl}   
+
+\PassOptionsToPackage{hyphens}{url}\usepackage[linktocpage,bookmarks]{hyperref}
+\hypersetup{    pdfauthor={Name des Authors},
+                pdftitle={Titel},
+                pdfsubject={},
+                colorlinks=true,
+                citecolor=black,
+                linkcolor=black,
+                urlcolor=black}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{bbm}
+\usepackage{ae,aecompl}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{acronym}
+\usepackage[numbers]{natbib}
+\usepackage{textcomp}
+
+\pdfstringdefDisableCommands{
+	\let\cite\@gobble % remove also first argument
+}
+\pdfstringdefDisableCommands{
+	\let\\\empty % remove also first argument
+}
+\title{Expos\'e - Deep Learning}
+\subtitle{This will be the topic title}
+
+\author{Wei-Hung Hsu}
+
+\date{April 21th, 2019}
+
+\RedeclareSectionCommand[%
+	beforeskip=-0.5\baselineskip
+]{paragraph}
+
+\begin{document}  
+
+\maketitle
+
+\input{content}
+
+
+\bibliographystyle{plainnat}
+\bibliography{bibliography}
+
+
+\end{document}
